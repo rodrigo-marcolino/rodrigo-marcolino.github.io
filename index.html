@@ -1,9 +1,73 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>My blog</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Personal Blog</title>
+  </head>
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg card">
+          <h2>Hello & Welcome</h2>
+          <p>
+            My name is Rodrigo Marcolino. I've been in the IT industry for a
+            while and I built up my career to become a System/Network
+            administrator. However, In 2020 I have decided to start my journey
+            to become a Software Developer, and currently studying at Dev
+            Academy. I created this page as part of the program.
+          </p>
+          <button
+            onclick="window.location.href='https://www.linkedin.com/in/rodrigo-marcolino-92125864/'"
+          >
+            Check out my Blog
+          </button>
+        </div>
+        <div class="col-lg-7 img-fluid img-code">
+          <img
+            class="img-fluid"
+            src="./images/undraw_Freelancer_re_irh4.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center social-icons bottom">
+        <a
+          class="social-icon"
+          href="https://www.linkedin.com/in/rodrigo-marcolino-92125864/"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a class="social-icon" href="https://github.com/rodrigo-marcolino"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="social-icon"
+          href="https://www.instagram.com/rodrigomarcolinodeoliveira/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </div>
   </body>
 </html>

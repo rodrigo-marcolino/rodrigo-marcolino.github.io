@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@100;300;400&display=swap');
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  padding: 4.5rem;
+  margin: 0;
+  /* background: #edc0bf;
+    background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%); */
+  font-family: 'Inter', sans-serif;
+  background: rgb(142, 197, 230);
+  background: linear-gradient(
+    90deg,
+    rgba(142, 197, 230, 1) 0%,
+    rgba(100, 96, 215, 1) 100%,
+    rgba(183, 141, 201, 1) 100%
+  );
+}
+
+.card {
+  width: auto;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  
+}
+.card-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+
+a {
+  color: #4d4ae8;
+  text-decoration: none;
+}
+
+
+.img-code {
+  padding: 10% 0% 1% 1%;
+  max-width: 100%;
+}
+
+li, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #6c63ff;
+    color: black;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .social-icons .social-icon:last-child {
+    margin-right: 0;
+  }
+  .social-icons .social-icon:hover {
+    background-color: #a491ff;
+  }
+
+  button {
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    width: fit-content;
+    background-color: #6c63ff;
+    display: block;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  } 
+
+  button:hover {
+    background-color: #a491ff;
+  }
+
+  .bottom {
+      margin-top: 5%;
+  }
+  
