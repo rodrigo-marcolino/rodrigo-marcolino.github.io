@@ -93,3 +93,7 @@ li, button {
       margin-top: 5%;
   }
   
+@media (max-width: 460px) {
+    body {
+        padding: 0.5rem;
+        }
