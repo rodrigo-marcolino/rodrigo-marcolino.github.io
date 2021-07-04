@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -25,7 +25,8 @@ body {
   background: rgba(255, 255, 255, 0.4);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
-  
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 .card-title {
   margin-top: 0;
