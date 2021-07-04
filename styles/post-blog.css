@@ -53,6 +53,7 @@ header {
     rgba(183, 141, 201, 1) 100%
   );
   color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 body > footer {
@@ -66,6 +67,8 @@ body > footer {
   text-align: center;
   margin-top: 40px;
   color: #fff;
+  box-shadow: 1px -1px 4px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75); */
 }
 
 blockquote {
