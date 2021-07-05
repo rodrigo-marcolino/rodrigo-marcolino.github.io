@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/post-blog.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Rodrigo Marcolino - Blog</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>What does it mean to display inline vs inline blocks?</h1>
+        <p>
+          <small>By Rodrigo Marcolino | Posted on: <em>04/07/2021</em></small>
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <article class="container">
+        <h2>BLOCK VS. INLINE ELEMENTS</h2>
+        <p>
+          There are essentially two kinds of HTML elements:
+          <strong>Block elements</strong> and
+          <strong>inline elements.</strong> The best way to think about them is
+          by how much page width they take up.
+        </p>
+
+        <p>
+          <strong>Block elements</strong>, e.g. &lt;h1&gt;, &lt;div&gt;,
+          &lt;p&gt;, &lt;li&gt;
+        </p>
+        <ul>
+          <li>
+            Take up the full available width, thus creating their own block on a
+            page.
+          </li>
+          <li>Each element fits into the box model and has its own spacing.</li>
+          <li>Have a line-break before and after.</li>
+        </ul>
+        <p>HTML Code:</p>
+        <img
+          class=""
+          style="margin-bottom: 1rem"
+          src="../images/HTML-block-element-code.png"
+          alt="HTML element"
+        />
+        <p>Result:</p>
+        <img
+          class=""
+          style="margin-bottom: 1rem"
+          src="../images/HTML-block-element-result.png"
+          alt="HTML element"
+        />
+        <p>
+          <strong>Inline elements</strong>, e.g. &lt;span&gt;, &lt;a&gt;,
+          &lt;strong&gt;, &lt;em&gt;
+        </p>
+        <article>
+          <li>
+            An inline element does not start on a new line and only takes up as
+            much width as necessary.
+          </li>
+        </article>
+        <p style="margin-top: 1rem">HTML Code</p>
+        <img
+          class=""
+          style="margin-bottom: 1rem; max-width:80%"
+          src="../images/HTML-inline-element-code.jpg"
+          alt="HTML element"
+        />
+        <p>Result:</p>
+        <img
+          class=""
+          style="margin-bottom: 1rem; "
+          src="../images/HTML-inline-element-result.png"
+          alt="HTML element"
+        />
+        <h2>Changing element levels</h2>
+        <p>
+          You can change the visual presentation of an element using the CSS
+          display property. For example, by changing the value of display from
+          "inline" to "block", you can tell the browser to render the inline
+          element in a block box rather than an inline box, and vice versa.
+          Let's see a example In the figure below.
+        </p>
+        <p style="margin-top: 1rem">HTML Code</p>
+        <img
+          class=""
+          style="margin-bottom: 1rem; max-width:80%;
+          "
+          src="../images/HTML-inline-vs-block-element-code.jpg"
+          alt="HTML element"
+        />
+        <p>Result:</p>
+        <img
+          class=""
+          style="margin-bottom: 1rem; max-width:80%"
+          src="../images/HTML-inline-vs-block-element-result.jpg"
+          alt="HTML element"
+        />
+        
+     
+        <p>
+          I have an outer div, called div1, which contains some divs, and then
+          have another outer div, called inline, which also has some divs. Now, in
+          div1, notice there's no CSS styling up here for div1. So these divs
+          display as they would by default. And by default, divs display on
+          their inline. 
+          <p>So we have a separate line for each of these divs being
+            displayed. Okay, so those are the first three divs, they're displayed
+            as block elements by default.
+          </p>
+          <p>Okay, now let's have a look at the
+            second div. For this div, I've also got nested divs. For "inline div", I've said this publicly, this rule here, it says, In "inline div",
+            any divs inside it will be inline as opposed to block. So when we have
+            "inline div", any divs inside it will be displayed as inline elements. So
+            that's the effect that you see.</p> 
+          
+          <p> Okay, moving on, I have
+            a navbar which contains some hyperlinks, and I have another navbar
+            which also displays hyperlinks, but let's see how styling kicks in.
+            So, this first navbar "nav1", I haven't defined any CSS for nav1. So
+            these hyperlinks get displayed in their normal format, which is as an
+            inline element.</p>
+          <p>
+            The second "block navbar", the same hyperlinks, but this time, I've
+          said for "block navbar", for that section, any anchors, any hyperlinks inside
+          "block navbar" will be displayed as block. So when you set displayed block,
+          then each hyperlink goes on its own line like so.
+          </p>   
+           
+        </p>
+      </article>
+    </main>
+    <footer>
+      <div class="container"><p>&copy; 2021 Rodrigo Marcolino</p></div>
+    </footer>
+  </body>
+</html>

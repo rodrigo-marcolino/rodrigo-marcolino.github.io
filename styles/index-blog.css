@@ -8,36 +8,6 @@ body {
   margin: 0;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0 0 0.35em;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 28px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-p {
-  margin: 0 0 1.5em;
-  font-size: 1.1rem;
-}
-p + h2 {
-  margin-top: 16px;
-}
-
-blockquote + img + h2 {
-  margin-top: 1.5em;
-}
-
 .container {
   max-width: 800px;
   margin-left: auto;
@@ -57,32 +27,77 @@ header {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-body > footer {
-  background: linear-gradient(
-    90deg,
-    rgba(142, 197, 230, 1) 0%,
-    rgba(100, 96, 215, 1) 100%,
-    rgba(183, 141, 201, 1) 100%
-  );
-  padding: 3px;
-  text-align: center;
-  margin-top: 40px;
-  color: #fff;
-  box-shadow: 1px -1px 4px 1px rgba(0, 0, 0, 0.2);
+.post-row {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  justify-content: space-between;
 }
 
-blockquote {
+.post {
+  padding: 20px;
+  border: 1px solid #c9c9c9;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.15);
+}
+.post > img:first-child {
+  border-radius: 7px 7px 0 0;
+  margin-bottom: 0px;
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+.post h3 {
+  color: #222;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+}
+
+.post p {
+  color: #757575;
+}
+em {
+  color: #fff;
+  padding: 0.25em;
   background: linear-gradient(
     90deg,
     rgba(142, 197, 230, 1) 0%,
     rgba(100, 96, 215, 1) 100%,
     rgba(183, 141, 201, 1) 100%
   );
-  margin-left: 0;
-  margin-right: 0;
-  padding: 1em;
   border-radius: 4px;
+  margin: 1%;
+}
+.button {
+  border: 0;
+  border-radius: 20px;
   color: #fff;
+  width: fit-content;
+  background-color: #6c63ff;
+  display: block;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin-top: 4%;
+}
+
+footer {
+  background: linear-gradient(
+    90deg,
+    rgba(142, 197, 230, 1) 0%,
+    rgba(100, 96, 215, 1) 100%,
+    rgba(183, 141, 201, 1) 100%
+  );
+  /* padding: 3px; */
+  text-align: center;
+  /* margin-top: auto; */
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  box-shadow: 1px -1px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 .img-align-left {
@@ -99,8 +114,4 @@ blockquote {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-}
-img {
-  width: 100%;
-  height: auto;
 }
