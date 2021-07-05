@@ -13,7 +13,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-right: auto;
-  padding: 24px;
 }
 
 header {
@@ -25,11 +24,15 @@ header {
   );
   color: #fff;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: auto;
+  padding: 24px;
+  text-align: center;
 }
 
 .post-row {
-  display: grid;
-  grid-template-columns: repeat(3, 32%);
+  display: flexbox;
   justify-content: space-between;
 }
 
@@ -38,6 +41,7 @@ header {
   border: 1px solid #c9c9c9;
   border-radius: 7px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.15);
+  margin: 2%;
 }
 .post > img:first-child {
   border-radius: 7px 7px 0 0;
@@ -54,9 +58,10 @@ header {
 }
 
 .post p {
-  color: #757575;
+  color: #1d1616;
+  font-size: 16px;
 }
-em {
+.tag {
   color: #fff;
   padding: 0.25em;
   background: linear-gradient(
@@ -66,22 +71,23 @@ em {
     rgba(183, 141, 201, 1) 100%
   );
   border-radius: 4px;
-  margin: 1%;
+  margin: 0.2%;
 }
 .button {
   border: 0;
-  border-radius: 20px;
+  border-radius: 25px;
   color: #fff;
   width: fit-content;
   background-color: #6c63ff;
   display: block;
   border: none;
-  padding: 14px 28px;
+  padding: 10px 25px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
   display: inline-block;
   margin-top: 4%;
+  text-decoration: none;
 }
 
 footer {
