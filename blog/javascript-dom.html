@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-
+<!-- Prism CSS -->
+<link rel="stylesheet" href="../styles/prism.css">
     <title>Rodrigo Marcolino - Blog</title>
   </head>
   <body>
@@ -36,40 +37,178 @@
 
         </p>
 <p>I suppose a good analogy would be HTML is like furniture in a room in your house, while CSS is the style of the interior decoration.</p>
-        <h2>The main Topic</h2>
+        <h2>Control flow and loops using an everyday life example</h2>
+        
+        <p>On the code below show a pseudo code for a day life routine. In this case how to prepare a cafe. </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-          vel odit, necessitatibus eius, autem impedit eligendi officiis
+          <pre><code class="language-css">/* 
+            Making an Omelet
+            Take the ingredients: eggs, milk, salt, pepper */
+            var eggs;
+            var milk;
+            var salt;
+            Var bowl;
+            
+            While is not blended {
+              /* Beat the all ingredients together until been blended */
+              Bowl += beat(eggs, milk, salt, pepper);
+            }</code></pre>
           <p>
           veritatis aliquam voluptas sint possimus distinctio labore provident.
           Alias voluptatibus architecto iure excepturi.
         </p>
         </p>
 
-        <h2>Subtopic</h2>
+        <h2>The Document Object Model (DOM)</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-          vel odit, necessitatibus eius, autem impedit eligendi officiis
-          veritatis aliquam voluptas sint possimus distinctio labore provident.
-          Alias voluptatibus architecto iure excepturi.
+          What is the DOM? In short, the DOM is a way of conceptualizing the 
+          contents of a document.
         </p>
-        <blockquote>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-            Placeat voluptatibus maiores iusto quia!
-          </p>
-          <footer>
-            <cite>Reference</cite>
-          </footer>
-        </blockquote>
-        <img class="img-align-right" src="../images/undraw_static_assets_rpm6.svg" alt="">
-        <h2>Conclusion</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-          vel odit, necessitatibus eius, autem impedit eligendi officiis
-          veritatis aliquam voluptas sint possimus distinctio labore provident.
-          Alias voluptatibus architecto iure excepturi.
-        </p>
+        <p>The Document Object Model (DOM) is an application programming 
+          interface (API) for HTML and XML documents. The DOM represents a 
+          document as a hierarchical tree of nodes, allowing developers to 
+          add, remove, and modify individual parts of the page.</p>
+
+          <h2>HIERARCHY OF NODES
+          </h2>
+          <p>Any HTML can be represented as a hierarchy of 
+            nodes using the DOM. There are several node types, each
+             representing different information and/or markup in the document.
+              Each node type has different characteristics, data, and methods,
+               and each may have relationships with other nodes. These 
+               relationships create a hierarchy that allows markup to be 
+               represented as a tree, rooted at a particular node. For instance, 
+               consider the following HTML:</p>
+               <p>
+                <pre><code class="language-markup"> &lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;DevAcademy&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;  
+    &lt;p&gt;DevAcademy - JS Fundamentals&lt;/p&gt;  
+  &lt;/body&gt;
+&lt;/html&gt;                </code></pre>
+               </p>
+
+               <p>This simple HTML document can be represented in a hierarchy, as illustrated below.</p>
+               <img src="../images/dom.png" alt="dom">
+               <p>A document node represents every document as the root. In this example, the only child of the document node is the <html> element, which is called the document element. The document element is the outermost element in the document within which all other elements exist. There can be only one document element per document. In HTML pages, the document element is always the <html> element.</p>
+
+               <h2>Interacting with the DOM</h2>
+               <p>I have some very simple code 
+                that will create some boxes with a gray background, 
+                as well as with a width of 100 and a height of 100 pixels. 
+                </p>
+                <p>You can see within the JavaScript file that there is an Array called "colors", and this is really just to make my boxes look a little bit more interesting.</p>
+                <p>The script is going through all of those different colors 
+                  and  creating  boxes with each of the colors. 
+                  It just cycles through the different colors. 
+                  If I create like 20 boxes and I only have 10 colors, 
+                  after the tenth color is used 
+                  it'll just go back to the first one, 
+                  and so on and so forth. </p>
+                  <p>The JavaScript Code:</p>
+                  <pre>
+                    <code class="language-javascript">
+  <!-- -->var colors = [
+    '#012a4a',
+    '#013a63',
+    '#01497c',
+    '#014f86',
+    '#2a6f97',
+    '#2c7da0',
+    '#468faf',
+    '#61a5c2',
+    '#89c2d9',
+    '#a9d6e5',
+];
+
+function makeBoxes(numberOfBoxes) {
+    var colorCount = colors.length;
+    var currentColor = 0;
+    var myElement;
+    var myNode = document.querySelector('.boxes');
+    
+    for (var i = 0; i < numberOfBoxes; i++) {
+        myElement = document.createElement('div');
+        myElement.className = 'box';
+        myElement.style.backgroundColor = colors[currentColor];
+        console.log(colors[currentColor])
+        myNode.appendChild(myElement);
+        if (currentColor === colorCount-1) {
+            currentColor = 0;
+        } else {
+            currentColor++;
+        }
+    }
+}
+
+makeBoxes(10000);<!--
+                    --></code>
+                  </pre>
+
+                  <p>The HMTL code:</p>
+                  <p>
+                    <pre><code class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;title&gt;DevAcademy - Manipulate the DOM&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="boxes"&gt;&lt;/div&gt;
+
+    &lt;script src="./javascript.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;              
+                      </code></pre>
+                   </p>
+                   <p>Result:</p>
+                   <img src="../images/js-fundamentals.jpg" alt="">
+                   <h2>The difference between accessing data from arrays and objects.</h2>
+                   <p>Array elements are accessed using index in bracket notation. Array index starts at zero.</p>
+                   <p>
+                    <pre>
+                      <code class="language-javascript">
+const myArray = ['D', 'e', 'v', 'A', 'c', 'a', 'd', 'e', 'm', 'y'];
+console.log(myArray[0]);   // outout=> D
+console.log(arrNums[3]);   // outout=> A
+                      </code>
+                    </pre>
+                   </p>
+                   <p>There are two ways for accessing an Object.<b> Square brackets</b> and <b>Dot notation.</b></p>
+                   
+                   <p><b>Square brackets = Syntax: expression[expression]</b></p>
+                   <p>  <pre> <code class="language-javascript">
+const bootCamp = {
+name: "DevAcademy"
+format: "Online"
+                 }
+                   
+console.log(bootCamp[name]); // output => DevAcademy
+                                          </code>
+                                        </pre></p>
+                                        <p><b>Dot notation.</b></p>
+                                        <p>To access a property of an object through dot notation, we must know the property name beforehand.
+
+                                        </p><p> <b> Syntax: expression.identifier</b></p>
+                                        <p>  <pre> <code class="language-javascript">
+const bootCamp = {
+name: "DevAcademy"
+format: "Online"
+                  }
+                                          
+console.log(bootCamp.name); // output => DevAcademy
+                                                                                    </code>
+                                                                                  </pre></p>
+        <h2>What functions are and why they are useful.</h2>
+        <p>Commonly, programs carry out the same or similar tasks repeatedly during the course of their execution. For you to avoid rewriting the same piece of code over and over again, JavaScript has the means to parcel up parts of your code into reusable units, called functions. Once you’ve written a function, it is available for the rest of your program to use, as if it were itself a part of the JavaScript language.</p>
+        <p>Using functions also makes your code easier to debug and maintain. Suppose you’ve written an application to calculate shipping costs; when the tax rates or haulage prices change, you’ll need to make changes to your script. There may be 50 places in your code where such calculations are carried out. When you attempt to change every calculation, you’re likely to miss some instances or introduce errors. However, if all such calculations are wrapped up in a few functions used throughout the application, then you just need to make changes to those functions. Your changes will automatically be applied all through the application.</p>
+        <p>Functions are one of the basic building blocks of JavaScript and will appear in virtually every script you write. In this lesson you see how to create and use functions.</p>
       </article>
       
     </main>
@@ -77,5 +216,7 @@
       <div class="container"><p>&copy; 2021 Rodrigo Marcolino</p></div>
       
     </footer>
+    <script src="../js/prism.js"></script>
+
   </body>
 </html>

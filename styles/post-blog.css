@@ -37,6 +37,9 @@ p + h2 {
 blockquote + img + h2 {
   margin-top: 1.5em;
 }
+img + h2 {
+  margin-top: 1.5em;
+}
 
 .container {
   max-width: 800px;
