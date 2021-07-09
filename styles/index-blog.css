@@ -6,7 +6,6 @@
 body {
   color: #222;
   margin: 0;
-  
 }
 
 .container {
@@ -89,6 +88,10 @@ header {
   display: inline-block;
   margin-top: 4%;
   text-decoration: none;
+}
+
+.button:hover {
+  background-color: #a491ff;
 }
 
 footer {
