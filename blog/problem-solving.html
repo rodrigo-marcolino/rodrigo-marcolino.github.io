@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/post-blog.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet" />
+    <!-- Prism CSS -->
+    <link rel="stylesheet" href="../styles/prism.css" />
+    <title>Rodrigo Marcolino - Blog</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Problem Solving</h1>
+        <p>
+          <small>By Rodrigo Marcolino | Posted on: <em>15 July 2021</em></small>
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <article class="container">
+        <p>
+          In this sprint we learned a lot about problem solving, we saw some patterns to work on that and all were very
+          helpful. I will describe my own method that I am developing from my journey here at
+          <a href="https://devacademy.co.nz/">Dev Academy.</a>
+        </p>
+        <p>
+          In order to achieve that I will use one of our tasks from JavaScript Kata, the
+          <a href="https://replit.com/@RodrigoMarcolin/Super-FizzBuzz#index.js">FizzBuzz,</a> which is a classic
+          programming exercise.
+        </p>
+
+        <h2>Understanding The Problem</h2>
+        <p>
+          The task consisted of two phases. In the first phase, was asked to write a program which prints out each
+          number from 1 to 100. But for multiples of 3 print 'Fizz' instead of the number and for multiples of 5 print
+          'Buzz'. For numbers which are multiples of both 3 and 5 print 'FizzBuzz'.
+        </p>
+        <p>
+          In the second phase, was asked to Write a method called <b>super_fizzbuzz</b> which takes as its input an
+          <b>Array of integers</b>.
+        </p>
+        <p>
+          It should loop over that array and then return a "fizzbuzzed" <b>Array</b>, i.e., the array is identical to
+          the original, but with the following changes:
+        </p>
+        <ol>
+          <li>Multiples of <b>3</b> should be replaced with the string <b>"Fizz"</b></li>
+          <li>Multiples of <b>5</b> should be replaced with the string <b>"Buzz"</b></li>
+          <li>Multiples of <b>15</b> should be replaced with the string <b>"FizzBuzz"</b></li>
+        </ol>
+
+        <h2>Writing Pseudocode</h2>
+        <p>
+          Before I jump into the solution usually I write pseudocode for the problem. Definitely, it helps me defines
+          the structure of my code.
+        </p>
+        <p>The algorithm in pseudo code for this problem:</p>
+        <p> <pre><code class="language-css">
+When a user inputs a number
+If the current number is divisible by 3 then print "Fizz"
+If the current number is divisible by 5 then print "Buzz"
+If the current number is divisible by 3 and 5 then print "FizzBuzz"
+Otherwise print the current number
+        </code></pre></p>
+        <h2>Replacing Pseudocode With Real Code</h2>
+        <p>
+          Once I have written the pseudocode it’s time to translate this into actual code. This was a quite simple task
+          to complete, it was almost a copy and paste from the pseudocode.
+        </p>
+        <p>
+          However. the second part was a different history. I really got stuck in this part, I had tried many different
+          approaches, basically, I went through all this process below:
+        </p>
+        <ul>
+          <li>Pseudocode</li>
+          <li>Replace Pseudocode With Real Code</li>
+          <li>Reading error messages and google about</li>
+          <li>Exhaustive use of Console.log</li>
+          <li>Googling</li>
+        </ul>
+        
+        <p>I was almost giving up and asking for help, and then suddenly, one of the topics from the topic "code Readability" that we learned in this sprint came up in my mind, the concept of <b>D.R.Y (Don't Repeat Yourself).</b></p>
+        <p>In the previous solution, I already wrote a function to solve the problem for just numbers but without an array. What I've done was use this function within the built-in Array.map() method which allows iterating over an array and modify its elements using as a callback function.</p>
+        <p>I have to admit that I was proud of myself because it was a clean, simple and elegant solution.</p>
+
+       
+      </article>
+    </main>
+    <footer>
+      <div class="container"><p>&copy; 2021 Rodrigo Marcolino</p></div>
+    </footer>
+
+    <script src="../js/prism.js"></script>
+  </body>
+</html>

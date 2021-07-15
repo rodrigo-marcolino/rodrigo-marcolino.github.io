@@ -34,6 +34,13 @@ p + h2 {
   margin-top: 16px;
 }
 
+p + ol {
+  font-size: 1.1rem;
+}
+p + ul {
+  font-size: 1.1rem;
+}
+
 blockquote + img + h2 {
   margin-top: 1.5em;
 }
@@ -75,17 +82,12 @@ body > footer {
 }
 
 blockquote {
-  background: linear-gradient(
-    90deg,
-    rgba(142, 197, 230, 1) 0%,
-    rgba(100, 96, 215, 1) 100%,
-    rgba(183, 141, 201, 1) 100%
-  );
+  background: linear-gradient(90deg, rgb(200, 222, 236) 0%, rgb(230, 246, 250) 100%, rgb(225, 200, 236) 100%);
   margin-left: 0;
   margin-right: 0;
   padding: 1em;
-  border-radius: 4px;
-  color: #fff;
+  border-radius: 7px;
+  color: #222;
 }
 
 .img-align-left {
@@ -106,4 +108,8 @@ blockquote {
 img {
   width: 100%;
   height: auto;
+}
+
+.tag {
+  background: linear-gradient(90deg, rgb(200, 222, 236) 0%, rgb(230, 246, 250) 100%, rgb(225, 200, 236) 100%);
 }
