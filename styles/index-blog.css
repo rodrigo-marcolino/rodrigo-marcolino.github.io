@@ -43,6 +43,11 @@ header {
   box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.15);
   margin: 2%;
 }
+.post:hover {
+  transform: scale(1, 1.1);
+  box-shadow: 2px 2px 15px 8px rgba(90, 90, 90, 0.25), 
+    -2px -2px 15px 8px rgba(124, 124, 124, 0.22);
+}
 .post > img:first-child {
   border-radius: 7px 7px 0 0;
   margin-bottom: 0px;
