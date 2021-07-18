@@ -7,9 +7,7 @@ body {
   color: #222;
   margin: 0;
 }
-.home {
-  margin-right: 10px;
-}
+
 h1,
 h2,
 h3 {
@@ -50,7 +48,12 @@ blockquote + img + h2 {
 img + h2 {
   margin-top: 1.5em;
 }
-
+div + h2 {
+  margin-top: 1.5em;
+}
+div + p {
+  margin-top: 1.5em;
+}
 .container {
   max-width: 800px;
   margin-left: auto;
@@ -69,6 +72,9 @@ header {
   color: #fff;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.home {
+  margin-right: 10px;
+}
 
 body > footer {
   background: linear-gradient(
@@ -80,6 +86,7 @@ body > footer {
   padding: 3px;
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 0;
   color: #fff;
   box-shadow: 1px -1px 4px 1px rgba(0, 0, 0, 0.2);
 }
@@ -121,4 +128,49 @@ img {
 
 .tag {
   background: linear-gradient(90deg, rgb(200, 222, 236) 0%, rgb(230, 246, 250) 100%, rgb(225, 200, 236) 100%);
+}
+
+div.img {
+  display: grid;
+  grid: template columns 1fr;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+}
+.container-vs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  text-align: center;
+  color: rgb(46, 47, 58);
+  font-size: larger;
+}
+.container-vs div {
+  padding: 10px;
+}
+
+div.column-left {
+  background-color: rgba(183, 141, 201, 1);
+  transition: background-color 0.5s ease;
+}
+
+div.column-left:hover {
+  font-weight: bold;
+  transform: scale(1, 1.1);
+  color: whitesmoke;
+}
+
+div.column-right {
+  background-color: rgba(142, 197, 230, 1);
+}
+div.column-right:hover {
+  font-weight: bold;
+  transform: scale(1, 1.1);
+  color: whitesmoke;
+}
+
+.footer {
+  margin-bottom: 0;
 }
