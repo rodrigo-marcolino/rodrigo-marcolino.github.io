@@ -48,10 +48,12 @@ blockquote + img + h2 {
 img + h2 {
   margin-top: 1.5em;
 }
-div + h2 {
+
+div + p {
   margin-top: 1.5em;
 }
-div + p {
+
+.img {
   margin-top: 1.5em;
 }
 .container {
