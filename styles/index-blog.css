@@ -4,7 +4,7 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  color: #222;
+  color: rgba(74,74,74,0.7);
   margin: 0;
 }
 
@@ -31,6 +31,7 @@ header {
   margin-bottom: 1.9rem;
   padding: 24px;
   text-align: center;
+  font-weight: bolder;
 }
 
 .post-row {
