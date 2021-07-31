@@ -3,6 +3,11 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #222;
   margin: 0;
