@@ -124,7 +124,3 @@ img {
   width: 100%;
   height: auto;
 }
-
-.tag {
-  background: linear-gradient(90deg, rgb(200, 222, 236) 0%, rgb(230, 246, 250) 100%, rgb(225, 200, 236) 100%);
-}
